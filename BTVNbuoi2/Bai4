@@ -1,0 +1,9 @@
+n = int(input("Nhap so tien: "))
+chai = n // 28
+tong = chai
+vo = chai
+while vo >= 3:
+    doi = vo // 3
+    tong += doi
+    vo = vo % 3 + doi
+print("So chai bia co the uong duoc la:", tong)

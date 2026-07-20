@@ -1,0 +1,13 @@
+thang = int(input("nhap thang:"))
+nam = int(input("nhap nam:"))
+if thang == 2:
+    if (nam %400==0) or (nam%4 ==0 and nam % 100 !=0):
+        print (29)
+    else:
+        print(28)
+elif thang ==4 or thang ==6 or thang ==9 or thang ==11:
+    print (30)
+elif thang ==1 or thang ==3 or thang ==5 or thang ==7 or thang ==8 or thang ==10 or thang ==12:
+    print (31)
+else:
+    print ("thang khong hop le!")

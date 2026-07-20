@@ -1,0 +1,39 @@
+ngay = int(input("nhap ngay:"))
+thang = int(input("nhap thang:"))
+hop_le = True
+if thang <1 or thang >12:
+    hop_le = False
+if thang in [4,6,9,11] and (ngay <1 or ngay >30):
+    hop_le = False
+if thang == 2 and (ngay<1 or ngay >29):
+    hop_le=False
+elif thang in [1,2,5,7,8,10,12] and (ngay<1 or ngay >31):
+    hop_le = False
+if hop_le == False:
+    print("ngay hoac thang khong hop le!")
+elif (thang ==3 and ngay >= 21) or (thang ==4 and ngay <=19):
+    print ("bach duong")
+elif (thang ==4 and ngay >=20) or (thang ==5 and ngay <=20):
+    print("kim nguu")
+elif (thang ==5 and ngay >=21) or (thang ==6 and ngay <=20):
+    print("song tu")
+elif (thang ==6 and ngay >=21) or (thang ==7 and ngay <=22):
+    print("cu giai")
+elif (thang ==7 and ngay >=23) or (thang ==8 and ngay <=22):
+    print("su tu")
+elif (thang ==8 and ngay >=23) or (thang ==9 and ngay <=22):
+    print("xu nu")
+elif (thang == 9 and ngay >= 23) or (thang == 10 and ngay <= 22):
+    print("Thien Binh")
+elif (thang == 10 and ngay >= 23) or (thang == 11 and ngay <= 21):
+    print("Bo Cap")
+elif (thang == 11 and ngay >= 22) or (thang == 12 and ngay <= 21):
+    print("Nhan Ma")
+elif (thang == 12 and ngay >= 22) or (thang == 1 and ngay <= 19):
+    print("Ma Ket")
+elif (thang == 1 and ngay >= 20) or (thang == 2 and ngay <= 18):
+    print("Bao Binh")
+elif (thang == 2 and ngay >= 19) or (thang == 3 and ngay <= 20):
+    print("Song Ngu")
+else:
+    print("Ngay hoac thang khong hop le")
